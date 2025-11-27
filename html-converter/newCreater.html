@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Batch TXT → HTML Converter</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="newConverter.js" defer></script>
+</head>
+<body>
+  <h1>TXT → HTML Converter</h1>
+
+  <h2>Single Text Convert</h2>
+  <textarea id="input" placeholder="Paste your raw chapter text here..."></textarea>
+
+  <div class="btn-row">
+    <button id="convertBtn">Convert</button>
+    <button id="copyBtn">Copy Output</button>
+    <button id="clearBtn">Clear</button>
+  </div>
+
+  <pre id="output"></pre>
+
+  <hr>
+
+  <h2>Batch Convert TXT → HTML Files</h2>
+  <p>Select any number of .txt files. Each will be converted to .html and auto-downloaded.</p>
+
+  <input type="file" id="fileInput" multiple accept="text/plain" />
+  <button id="batchBtn">Convert Selected Files</button>
+</body>
+</html>

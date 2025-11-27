@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Text → HTML Paragraph Converter</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="converter.js" defer></script>
+</head>
+
+<body>
+    <h1>Text → HTML Paragraph Converter</h1>
+
+    <textarea id="input" placeholder="Paste your raw chapter text here..."></textarea>
+
+    <div class="btn-row">
+        <button onclick="convert()">Convert</button>
+        <button onclick="convertToHtml()">Convert to HTML</button>
+        <button onclick="copyOutput()">Copy Output</button>
+        <button onclick="clearAll()">Clear</button>
+    </div>
+    <div id="output" placeholder="HTML will appear here..."></div>
+</body>
+
+</html>
