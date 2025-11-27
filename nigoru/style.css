@@ -1,0 +1,56 @@
+body {
+    font-family: serif;
+    max-width: 800px;
+    margin: auto;
+    padding: 40px 20px;
+    line-height: 1.7;
+    background: #f4ecd8;
+    /* Sepia */
+    color: #3b2f2f;
+}
+
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+
+button {
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    background: #e0d4b8;
+    border: 1px solid #b9aa8a;
+    border-radius: 6px;
+}
+
+
+button:hover {
+    background: #d7c9a9;
+}
+
+
+article {
+    max-width: 800px;
+    margin: auto;
+}
+
+
+.chapter-title {
+    margin-top: 0;
+    text-align: center;
+}
+
+
+.chapter-content p {
+    margin: 18px 0;
+    font-size: 18px;
+}
+
+.chapter-content p:first-of-type {
+    margin-top: 0;
+    font-weight: bold;
+    text-align: center;
+}
