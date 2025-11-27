@@ -60,8 +60,14 @@ async function batchConvert() {
 <meta charset=\"UTF-8\" />
 <title>${file.name.replace(".txt", "")}</title>
 <link rel=\"stylesheet\" href=\"style.css\" />
+<script src="nav.js" defer></script>
 </head>
 <body>
+    <div class="nav-bar">
+        <button onclick="goPrev()">◀ Previous</button>
+        <button onclick="goList()">List</button>
+        <button onclick="goNext()">Next ▶</button>
+    </div>
 <div class=\"chapter-content\">
 ${html}
 </div>

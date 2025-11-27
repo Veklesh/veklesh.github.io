@@ -1,19 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <title>Nigoru — Chapter List</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
-    <h1>Nigoru — Chapter List</h1>
-    <ul>
-        <li><a href="chapter1.html">Chapter 1</a></li>
-        <li><a href="chapter2.html">Chapter 2</a></li>
-        <!-- Add more chapters here -->
-    </ul>
-</body>
 
+<h1>Nigoru — Chapter List</h1>
+<ul id="chapter-list"></ul>
+
+<script>
+    const maxChapters = 230;    // ← set this to however many chapters exist
+    const list = document.getElementById("chapter-list");
+
+    for (let i = 158; i <= maxChapters; i++) {
+        const num = String(i).padStart(3, "0");
+        const file = `chapter${num}.html`;
+
+        const li = document.createElement("li");
+        li.innerHTML = `<a href="${file}">Chapter ${num}</a>`;
+        list.appendChild(li);
+    }
+</script>
+
+</body>
 </html>
