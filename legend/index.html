@@ -16,7 +16,7 @@
 
     for (let i = 857; i <= maxChapters; i++) {
         const num = String(i).padStart(4, "0");
-        const file = `chapter${num}.html`;
+        const file = `${num}.html`;
 
         const li = document.createElement("li");
         li.innerHTML = `<a href="${file}">Chapter ${num}</a>`;
