@@ -15,7 +15,7 @@
     const list = document.getElementById("chapter-list");
 
     for (let i = 857; i <= maxChapters; i++) {
-        const num = String(i).padStart(3, "0");
+        const num = String(i).padStart(4, "0");
         const file = `chapter${num}.html`;
 
         const li = document.createElement("li");

@@ -31,11 +31,11 @@ function goPrev() {
     const filename = window.location.pathname.split("/").pop();
 
     // Extract chapter number
-    const match = filename.match(/chapter(\d{3})\.html/i);
+    const match = filename.match(/(\d{4})\.html/i);
     const current = parseInt(match[1], 10);
 
-    const prev = String(current - 1).padStart(3, "0");
-    window.location.href = `chapter${prev}.html`;
+    const prev = String(current - 1).padStart(4, "0");
+    window.location.href = `${prev}.html`;
 }
 
 function goNext() {
@@ -44,9 +44,9 @@ function goNext() {
     const filename = window.location.pathname.split("/").pop();
 
     // Extract chapter number
-    const match = filename.match(/chapter(\d{3})\.html/i);
+    const match = filename.match(/(\d{4})\.html/i);
     const current = parseInt(match[1], 10);
 
-    const next = String(current + 1).padStart(3, "0");
-    window.location.href = `chapter${next}.html`;
+    const next = String(current + 1).padStart(4, "0");
+    window.location.href = `${next}.html`;
 }
