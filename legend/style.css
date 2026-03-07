@@ -51,6 +51,6 @@ article {
 
 .chapter-content p:first-of-type {
     margin-top: 0;
-    font-weight: bold;
-    text-align: center;
+    /* font-weight: bold;
+    text-align: center; */
 }
