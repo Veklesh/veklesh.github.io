@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Villain — Chapter List</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<h1>Villain — Chapter List</h1>
+<ul id="chapter-list"></ul>
+
+<script>
+    const maxChapters = 900;    // ← set this to however many chapters exist
+    const list = document.getElementById("chapter-list");
+
+    for (let i = 858; i <= maxChapters; i++) {
+        const num = String(i).padStart(4, "0");
+        const file = `${num}.html`;
+
+        const li = document.createElement("li");
+        li.innerHTML = `<a href="${file}">Chapter ${num}</a>`;
+        list.appendChild(li);
+    }
+</script>
+
+</body>
+</html>
