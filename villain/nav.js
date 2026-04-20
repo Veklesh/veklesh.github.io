@@ -50,3 +50,16 @@ function goNext() {
     const next = String(current + 1).padStart(4, "0");
     window.location.href = `${next}.html`;
 }
+
+function goToLocation(location) {
+    console.log("test");
+    // Get current filename (e.g., "chapter159.html")
+    const filename = window.location.pathname.split("/").pop();
+
+    // Extract chapter number
+    const match = filename.match(/(\d{4})\.html/i);
+    const current = parseInt(match[1], 10);
+
+    const next = String(current + 1).padStart(4, "0");
+    window.location.href = `${location}.html`;
+}
